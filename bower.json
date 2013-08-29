@@ -1,0 +1,11 @@
+{
+  "name": "joinus-fdsu",
+  "version": "0.0.0",
+  "dependencies": {
+    "requirejs": "~2.1.8",
+    "jquery": "~1.10.2",
+    "jquery.localScroll": "~1.2.8",
+    "jquery.scrollTo": "~1.4.6"
+  },
+  "devDependencies": {}
+}
