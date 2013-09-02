@@ -8,7 +8,9 @@
     "jquery.scrollTo": "~1.4.6",
     "jQueryParallax": "https://github.com/IanLunn/jQuery-Parallax.git#master",
     "flipclock": "https://github.com/objectivehtml/FlipClock.git#master",
-    "font-awesome": "~3.2.1"
+    "font-awesome": "~3.2.1",
+    "bootstrap-sass": "~3.0.0",
+    "jquery.smartwizard": "https://github.com/mstratman/jQuery-Smart-Wizard.git#master"
   },
   "devDependencies": {}
 }

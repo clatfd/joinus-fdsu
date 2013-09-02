@@ -10,8 +10,12 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:css(.tmp) styles/joinus.css -->
+        <!-- load:font-family -->
+        <!-- endload -->
+        <!-- bower:css -->
         <link rel="stylesheet" href="bower_components/flipclock/css/flipclock.css">
+        <!-- endbower -->
+        <!-- build:css(.tmp) styles/joinus.css -->
         <link rel="stylesheet" href="styles/joinus.css">
         <!-- endbuild -->
     </head>
@@ -19,16 +23,23 @@
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <a href="https://github.com/lujiajing1126/joinus-fdsu"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png" alt="Fork me on GitHub"></a>
         <ul id="nav">
-        <li><a href="#main" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-        <li><a href="#network" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+        <li><a href="#main" title="Prev Section"><i class="icon-circle icon-2x"></i></a></li>
+        <li><a href="#reg" title="Next Section"><i class="icon-circle icon-2x"></i></a></li>
         </ul>
-        <div class="screen" id="main">
-          <h1>2013学年第一学期学生会招新</h1>
-          <div class="your-clock"></div>
+        <div class="screenplot" id="main">
+          <a href="https://github.com/lujiajing1126/joinus-fdsu"><img style="position: absolute; top: 0; right: 0; border: 0;" src="images/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
+          <div id="logo"></div>
+          <div id="title"></div>
+          <div id="yourclock"></div>
+          <div id="desc"><a>COMING SOON...</a></div>
+          <div id="linebar"></div>
+          <div id="buttons">
+            <a class="btn btn-large btn-primary" href="register.html"><i class="icon-user icon-2x"></i> 立即加入</a>
+            <a class="btn btn-large btn-primary" href="http://su.fudan.edu.cn/wiki/su/intro"><i class="icon-comment icon-2x"></i> 了解更多</a>
+          </div>
         </div>
-        <div class="screen" id="network">
+        <div class="screenplot" id="reg">
           <h1>信息部</h1>
           <p>You now have</p>
           <ul>

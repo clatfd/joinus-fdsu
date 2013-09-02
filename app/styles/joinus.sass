@@ -1,7 +1,12 @@
+@import "bootstrap-sass/lib/bootstrap"
+
 $FontAwesomePath: './font'
 @import "font-awesome/scss/font-awesome"
 
+@import "http://fonts.googleapis.com/css?family=Oleo+Script"
+
 $main-background:#3bbfce
+$h1-color: #2a6496
 $hr-background:green
 $fullscreen:100%
 
@@ -11,39 +16,119 @@ $fullscreen:100%
 *
   margin: 0
 
+h1
+  margin: 0 0
 body
   margin: 0
+  align: center
+  overflow-x: hidden
 
-.screen
+.screenplot
   width: $fullscreen
+  min-height: 600px
 
 #main
-  postion: absolute
-  background-image: url('../images/binding_dark.png')
-  color: white
+  position: relative
+  background-color: #000000
+  background-image: url('../images/bg.png')
+  background-size: auto 700px
+  background-repeat: repeat-x
+  background-position: -50px -50px
+  color: $h1-color
   align: center
   h1
     position: relative
-    width: 500px
-    top: 200px
+    width: 900px
+    top: 250px
     margin: 0 auto
+    font-weight: bold
+    font-size: 60px
+    text-align: right
+    font-family: "weiruanyahei"
+  div#desc
+    position: relative
+    top: 60px
+    left: 880px
+    a
+      font-family: "Oleo Script"
+      font-weight: bold
+      font-size: 40px
+      color: #ffffff
+      text-decoration: none
 
 #network
+  position: relative
   @include bg($hr-background)
 
 #nav
   position: fixed
-  top: 50px
+  top: 500px
   right: 20px
   list-style-type: none
-li
-  margin-bottom: 20px
-.your-clock
+  z-index: 100
+  li
+    margin-bottom: 20px
+
+i[class^="icon-"]
+  text-decoration: none
+  color: #ffffff
+  opacity: 0.5
+  &:hover
+    color: yellow
+
+#yourclock
+  min-height: 116px
   position: relative
-  top: 350px
-  width: 460px
+  top: 130px
+  width: 850px
   height: 116px
   margin: 0 auto
+  text-align: left
   .flip-clock-label
+    display: none
     color: rgb(204, 204, 204)
     font-size: 15px
+    font-family: 'Helvetica Neue', Helvetica, sans-serif
+
+#logo
+  width: 575px
+  height: 150px
+  position: relative
+  top: 60px
+  left: 150px
+  background-image: url('../images/fdusu_golden.png')
+  background-repeat: repeat-x
+  background-size: 500px
+  background-repeat: no-repeat
+#buttons
+  position: relative
+  width: 700px
+  text-align: center
+  height: 100px
+  top: 130px
+  margin: 0 auto
+a.btn
+  margin-right: 70px
+  font-weight: bold
+  font-size: 15px
+  font-family: "weiruanyahei"
+div#linebar
+  position: relative
+  height: 10px
+  width: 900px
+  top: 80px
+  left: 250px
+  background-image: url("../images/linebar.png")
+  background-size: 900px
+  background-repeat: no-repeat
+  background-position: 0 -23px
+div#title
+  background-image: url("../images/title.png")
+  background-repeat: no-repeat
+  background-size: 1000px
+  background-position: -50px
+  width: 1000px
+  height: 100px
+  position: relative
+  left: 300px
+  top: 70px
