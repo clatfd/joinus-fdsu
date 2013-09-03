@@ -11,7 +11,6 @@ var mountFolder = function (connect, dir) {
 // 'test/spec/{,*/}*.js'
 // use this if you want to recursively match all subfolders:
 // 'test/spec/**/*.js'
-
 module.exports = function (grunt) {
     // show elapsed time at the end
     require('time-grunt')(grunt);
@@ -132,6 +131,9 @@ module.exports = function (grunt) {
         },
         coffee: {
             dist: {
+                options: {
+                    sourceMap: true
+                },
                 files: [{
                     expand: true,
                     cwd: '<%= yeoman.app %>/scripts',
@@ -141,6 +143,9 @@ module.exports = function (grunt) {
                 }]
             },
             test: {
+                options: {
+                    sourceMap: true
+                },
                 files: [{
                     expand: true,
                     cwd: 'test/spec',
@@ -161,7 +166,7 @@ module.exports = function (grunt) {
                 importPath: '<%= yeoman.app %>/bower_components',
                 httpImagesPath: '/images',
                 httpGeneratedImagesPath: '/images/generated',
-                httpFontsPath: '/styles/fonts',
+                httpFontsPath: '/styles/font',
                 relativeAssets: false
             },
             dist: {
@@ -228,7 +233,7 @@ module.exports = function (grunt) {
             options: {
                 dest: '<%= yeoman.dist %>'
             },
-            html: '<%= yeoman.app %>/index.html'
+            html: '<%= yeoman.app %>/*.html'
         },
         usemin: {
             options: {
@@ -306,7 +311,8 @@ module.exports = function (grunt) {
                         '*.{ico,png,txt}',
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
-                        'styles/fonts/{,*/}*.*'
+                        'styles/fonts/{,*/}*.*',
+                        'styles/font/{,*/}*.*'
                     ]
                 }]
             },

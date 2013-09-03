@@ -7,16 +7,16 @@ $FontAwesomePath: './font'
 
 $main-background:#3bbfce
 $h1-color: #2a6496
-$hr-background:green
+$reg-background:#FFEC9F
 $fullscreen:100%
 
 @mixin bg($color)
   background: $color
 
 *
-  margin: 0
+  margin: 0 0
 
-h1
+h1,h2,h3
   margin: 0 0
 body
   margin: 0
@@ -25,7 +25,8 @@ body
 
 .screenplot
   width: $fullscreen
-  min-height: 600px
+  min-height: 642px
+  align: center
 
 #main
   position: relative
@@ -35,7 +36,6 @@ body
   background-repeat: repeat-x
   background-position: -50px -50px
   color: $h1-color
-  align: center
   h1
     position: relative
     width: 900px
@@ -56,10 +56,16 @@ body
       color: #ffffff
       text-decoration: none
 
-#network
+#reg
   position: relative
-  @include bg($hr-background)
-
+  @include bg($reg-background)
+  h2#p2title
+    width: 400px
+    margin: 0 auto
+    font-weight: bold
+    font-size: 30px
+    text-align: center
+    font-family: "weiruanyahei"
 #nav
   position: fixed
   top: 500px
@@ -132,3 +138,34 @@ div#title
   position: relative
   left: 300px
   top: 70px
+.swMain
+  margin: 0 auto
+  float: none
+  height: auto
+  label.stepNumber
+    width: 38px
+  .stepContainer
+    height: 400px
+    div.content
+      height: 400px
+div#footer
+  width: 980px
+  position: relative
+  top: 50px
+  color: #466EFE
+  margin: 0 auto
+  border-top:
+    style: solid
+    width: 1px
+    color: rgb(225, 226, 227)
+  padding-top: 9px
+  div
+    opacity: 0.5
+    text-decoration: none
+    cursor: pointer
+    &#left
+      float: left
+    &#right
+      float: right
+    &:hover
+      opacity: 0.8
