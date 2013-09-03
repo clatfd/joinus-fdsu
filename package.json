@@ -1,6 +1,12 @@
 {
   "name": "joinus-fdsu",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A testing package",
+  "author": "megrez <lujiajing1126@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lujiajing1126/joinus-fdsu"
+  },
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
